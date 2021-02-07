@@ -6,10 +6,12 @@ echo "私はあなたの名前です".PHP_EOL;
 } else {
 echo "あなたの名前ではありません";
 }
+
 for($i=1; $i<10001; $i++){
-  echo $i;
+  $total+=$i;
 }
-echo "\n";
+
+echo $total.PHP_EOL;
 
 $fruits=["apple","banana","lemon","orange","pineapple"];
 foreach($fruits as $a){
@@ -21,7 +23,7 @@ foreach($fruits as $a){
 
  for($i=$start; $i<$end; $i++){
    if($i%5==0){
-     echo $i;
+     echo $i.PHP_EOL;
    }
  }
 ?>
