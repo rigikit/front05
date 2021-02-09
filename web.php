@@ -23,14 +23,13 @@ Route::group(['prefix' => 'admin'], function() {
 
 //課題3
 Route::group(['prefix' => 'XXX'], function() {
-    Route::get('', 'AAAController@add');
+    Route::get('', 'AAAController@bbb');
 });
+
 
 //課題4
 Route::group(['prefix' => 'admin'], function() {
     Route::get('profile/create', 'ProfileController@add');
-});
-
-Route::group(['prefix' => 'admin'], function() {
     Route::get('profile/edit', 'ProfileController@edit');
 });
+
